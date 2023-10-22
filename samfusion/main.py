@@ -2,8 +2,8 @@ import cv2
 import gradio as gr
 import numpy as np
 import torch
-from PIL import Image
 from diffusers import DDIMScheduler, StableDiffusionInpaintPipeline
+from PIL import Image
 from segment_anything import SamPredictor, sam_model_registry
 
 MODEL_DICT = dict(
