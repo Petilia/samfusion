@@ -1,10 +1,11 @@
 import cv2
-import gradio as gr
 import numpy as np
 import torch
 from diffusers import DDIMScheduler, StableDiffusionInpaintPipeline
 from PIL import Image
 from segment_anything import SamPredictor, sam_model_registry
+
+import gradio as gr
 
 MODEL_DICT = dict(
     vit_h="https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth",  # yapf: disable  # noqa
